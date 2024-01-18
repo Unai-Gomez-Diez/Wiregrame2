@@ -3,28 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CabeceraComponentComponent } from './CoreModule/cabecera-component/cabecera-component.component';
-import { WidgetTransferenciaComponentComponent } from './widget-transferencia-component/widget-transferencia-component.component';
-import { WidgetEspacioComponentComponent } from './widget-espacio-component/widget-espacio-component.component';
-import { WidgetBuzonesComponentComponent } from './widget-buzones-component/widget-buzones-component.component';
-import { WidgetFTPComponentComponent } from './widget-ftpcomponent/widget-ftpcomponent.component';
-import { WidgetBDComponentComponent } from './widget-bdcomponent/widget-bdcomponent.component';
-import { WidgetFireWallComponentComponent } from './widget-fire-wall-component/widget-fire-wall-component.component';
+import { SeguridadModuleModule } from './seguridad-module/seguridad-module.module';
+import { WidgetTransferenciaComponentComponent } from './trafico-module/widget-transferencia-component/widget-transferencia-component.component';
+import { TraficoModuleModule } from './trafico-module/trafico-module.module';
+import { HDModuleModule } from './hdmodule/hdmodule.module';
+import { FTPModuleModule } from './ftpmodule/ftpmodule.module';
+import { EmailModuleModule } from './email-module/email-module.module';
+import { BDModuleModule } from './bdmodule/bdmodule.module';
+import { CoreModuleModule } from './core-module/core-module.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CabeceraComponentComponent,
-    WidgetTransferenciaComponentComponent,
-    WidgetEspacioComponentComponent,
-    WidgetBuzonesComponentComponent,
-    WidgetFTPComponentComponent,
-    WidgetBDComponentComponent,
-    WidgetFireWallComponentComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SeguridadModuleModule,
+    TraficoModuleModule,
+    HDModuleModule,
+    FTPModuleModule,
+    EmailModuleModule,
+    BDModuleModule,
+    CoreModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

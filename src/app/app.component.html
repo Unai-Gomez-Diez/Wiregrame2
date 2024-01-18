@@ -1,7 +1,7 @@
 <!-- inicio componente Cabecera -->
 <header class="cabecera container-fluid">
   <div class="row">
-    <h1>Gestión de empresa</h1>
+    <app-cabecera-component></app-cabecera-component>
   </div>
 </header>
 <!-- fin componente Cabecera -->
@@ -9,23 +9,33 @@
   <section class="widgets row">
     <ul class="widgets-list list-unstyled col">
       <!-- inicio componente WidgetTransferencia -->
-      <li class="widget">Transferencia mensual</li>
+      <li class="widget">
+        <app-widget-transferencia-component></app-widget-transferencia-component>
+      </li>
       <!-- fin componente WidgetTransferencia -->
       <!-- inicio componente WidgetEspacio -->
-      <li class="widget">Espacio en disco usado</li>
+      <li class="widget">
+        <app-widget-espacio-component></app-widget-espacio-component>
+      </li>
       <!-- fin componente WidgetEspacio -->
       <!-- inicio componente WidgetBuzones -->
-      <li class="widget">Número de buzones</li>
+      <li class="widget">
+        <app-widget-buzones-component></app-widget-buzones-component>
+      </li>
       <!-- fin componente WidgetBuzones -->
       <!-- inicio componente WidgetFTP -->
-      <li class="widget">Número de usuarios FTP</li>
+      <li class="widget">
+        <app-widget-ftpcomponent></app-widget-ftpcomponent>
+      </li>
       <!-- fin componente WidgetFTP -->
       <!-- inicio componente WidgetBD -->
-      <li class="widget">Número de bases de datos MySQL</li>
+      <li class="widget">
+        <app-widget-bdcomponent></app-widget-bdcomponent>
+      </li>
       <!-- fin componente WidgetBD -->
-      <!-- inicio componente WidgetFirewall -->
-      <li class="widget">Firewall</li>
-      <!-- fin componente WidgetFirewall -->
+      <li class="widget">
+        <app-widget-fire-wall-component></app-widget-fire-wall-component>
+      </li>
     </ul>
   </section>
 </main>
